@@ -30,10 +30,10 @@ let navList = document.createElement("ul");
 
 let navListItems = [
     { name: "Home", link: "./" },
-    { name: "About", link: "./About.html" },
-    { name: "Events", link: "./Events.html" },
-    { name: "Contact", link: "./Contact.html" },
-    { name: "Team", link: "./Team.html" }
+    { name: "About", link: "./About" },
+    { name: "Events", link: "./Events" },
+    { name: "Contact", link: "./Contact" },
+    { name: "Merchandise", link: "Merchandise" }
 ];
 
 navListItems.forEach(item => {
