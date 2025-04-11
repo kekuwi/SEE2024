@@ -26,7 +26,7 @@ let hamburgerUnderlay = document.createElement("div");
     hamburgerUnderlay.classList.add("hamburger-underlay");
 
 let navList = document.createElement("ul");
-    navList.classList.add("nav-list", "flex", "flex-row");
+    navList.classList.add("nav-list");
 
 let navListItems = [
     { name: "Home", link: "./" },
