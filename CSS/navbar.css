@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
 :root{
+    font-family: "Special Gothic Expanded One", sans-serif;
     transition: all 0.3s ease-in-out;
 }
 
@@ -6,17 +9,19 @@
     font-size: 20px;
     font-weight: bold;
     text-align: center;
+    color: var(--text-500);
     width: 100vw;
     height: 3rem;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     position: fixed;
     position: -webkit-sticky;
     top: 0;
-    background-color: var(--background-100);
-    color: var(--text-500);
-    padding: 2rem;
     margin: 0;
+    padding: 2rem;
+    background-color: var(--background-100);
+    z-index: 1;
 }
 .nav-list{
     display: none;
