@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+html{
+    height: auto;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Special Gothic Expanded One", sans-serif;
+    background-color: var(--background-100);
+}
+/* Hero or Main */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--background-50);
+}
+main .hero{
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.web-title h1{
+    font-size: 2.1rem;
+    font-weight: bold;
+    margin: 0.5rem;
+    color: var(--secondary-500);
+}
+
+.button{
+    background-color: var(--primary-500);
+    color: var(--text-50);
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 3rem 0;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.button:hover{
+    background-color: var(--primary-500);
+}
+
+/* About */
+.about{
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--primary-200);
+}
+.about div{
+    width: 80vw;
+}
+
+/* Category */
+.categories{
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.category-list{
+    width: 90vw;
+    display: grid;
+    grid-template-columns: calc(100vw/3 - 1rem) calc(100vw/3 - 1rem) calc(100vw/3 - 1rem);
+    grid-template-rows: calc(100vw/3 + 1rem) calc(100vw/3 + 1rem) calc(100vw/3 + 1rem);
+    gap: 1rem 0 ;
+    margin: 3rem 0;
+    justify-items: center;
+}
+.category-item{
+    width: calc(100vw/3 - 1.5rem);
+    height: calc(100vw/3 - 1.5rem);
+    margin: 0 0 4rem 0;
+}
+.category-item h3{
+    margin: 0.5rem;
+}
+
+.category-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    margin: 0;
+    object-fit: cover;
+}
+@media (min-width: 512px) {
+
+    main .hero{
+        height: 50vh;
+        transform: translate(0, 3rem);
+    }
+    .about{
+        height: 25rem;
+    }
+    .categories{
+        height: 40rem;}
+    .category-list{
+        grid-template-columns: calc(100vw/4 - 1rem) calc(100vw/4 - 1rem) calc(100vw/4 - 1rem) calc(100vw/4 - 1rem);
+        grid-template-rows: calc(100vw/4 + 1rem) calc(100vw/4 + 1rem);
+    }
+    .category-item{
+        width: calc(100vw/4 - 1.5rem);
+        height: calc(100vw/4 - 1.5rem);
+    }
+}
+@media (min-width: 896px) {
+    .categories{
+        height: 30rem;}
+    .category-list{
+        grid-template-columns: calc(100vw/8 - 1rem) calc(100vw/8 - 1rem) calc(100vw/8 - 1rem) calc(100vw/8 - 1rem) calc(100vw/8 - 1rem) calc(100vw/8 - 1rem) calc(100vw/8 - 1rem);
+        grid-template-rows: calc(100vw/8 + 1rem);
+    }
+    .category-item{
+        width: calc(100vw/8 - 1.5rem);
+        height: calc(100vw/8 - 1.5rem);
+    }
+}

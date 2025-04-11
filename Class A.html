@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/colorTheme.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/galery.css">
+    <link rel="stylesheet" href="photoswipe/dist/photoswipe.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar flex flex-row flex-space-between">
+            <a href="index.html" class="logo">
+                <img src="path/to/logo.png" alt="SEE Logo">
+            </a>
+            <button type="button" class="hamburger-button">☰</button>
+            <ul class="nav-list flex flex-row">
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- <div class="hamburger-background"></div> -->
+    </header>
+
+    <main>
+        <div class="gallery pswp-gallery pswp-gallery--single-column" id="gallery">
+            <a href="https://picsum.photos/2000"
+                data-pswp-width="2000"
+                data-pswp-height="2000"
+                target="_blank">
+                <img src="https://picsum.photos/2000" alt="">
+            </a>
+            <a href="https://picsum.photos/1080/1080"
+                data-pswp-width="1080"
+                data-pswp-height="1080"
+                target="_blank">
+                <img src="https://picsum.photos/1080/1080" alt="">
+            </a>
+            <a href="https://picsum.photos/1920/1080"
+                data-pswp-width="1920"
+                data-pswp-height="1080"
+                target="_blank">
+                <img src="https://picsum.photos/1920/1080" alt="">
+            </a>
+            <a href="https://picsum.photos/2000/1080"
+                data-pswp-width="2000"
+                data-pswp-height="1080"
+                target="_blank">
+                <img src="https://picsum.photos/2000/1080" alt="">
+            </a>
+        </div>
+    </main>
+</body>
+
+<script src="JS/Navbar.js"></script>
+<script type="module">
+import PhotoSwipeLightbox from '/photoswipe/dist/photoswipe-lightbox.esm.js';
+
+const lightbox = new PhotoSwipeLightbox({
+  // may select multiple "galleries"
+  gallery: '#gallery',
+
+  // Elements within gallery (slides)
+  children: 'a',
+
+  // setup PhotoSwipe Core dynamic import
+  pswpModule: () => import('/photoswipe/dist/photoswipe.esm.js')
+});
+lightbox.init();
+</script>
+
+</html>

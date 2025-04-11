@@ -1,0 +1,74 @@
+:root{
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: 100vw;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: var(--background-100);
+    color: var(--text-500);
+    padding: 2rem;
+    margin: 0;
+}
+.nav-list{
+    display: none;
+    list-style: none;
+    width: 12rem;
+    padding: 0;
+    top: 2rem;
+    right: 20px;
+    position: absolute;
+    flex-direction: column;
+    background-color: var(--primary-50);
+    border-radius: 0.5rem;
+    z-index: 1;
+}
+.nav-list a{
+    text-decoration: none;
+    color: var(--text-700);
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+/* The hamburger menu */
+.hamburger-button{
+    display: block;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: var(--text-500);
+}
+.hamburger-underlay{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.219);
+    backdrop-filter: blur(1.4px);
+    z-index: 1;
+}
+
+
+@media screen and (min-width: 768px) {
+    .hamburger-menu{
+        display: none;
+        cursor: pointer;
+        font-size: 30px;
+        color: var(--text-50);
+    }
+
+}
