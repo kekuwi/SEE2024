@@ -25,8 +25,8 @@
     <script src="JS/galery.js"></script>
     
     <script type="module">
-        import PhotoSwipeLightbox from '/photoswipe/dist/photoswipe-lightbox.esm.js';
-        import PhotoSwipeDynamicCaption from '/PhotoSwipe/dist/photoswipe-dynamic-caption-plugin.esm.js';
+        import PhotoSwipeLightbox from './photoswipe/dist/photoswipe-lightbox.esm.js';
+        import PhotoSwipeDynamicCaption from './PhotoSwipe/dist/photoswipe-dynamic-caption-plugin.esm.js';
 
         const lightbox = new PhotoSwipeLightbox({
         // may select multiple "galleries"
@@ -36,7 +36,7 @@
         childSelector: 'div.pswp-gallery-item',
 
         // setup PhotoSwipe Core dynamic import
-        pswpModule: () => import('/photoswipe/dist/photoswipe.esm.js'),
+        pswpModule: () => import('./photoswipe/dist/photoswipe.esm.js'),
 
         paddingFn: (viewportSize) => {
             return {
