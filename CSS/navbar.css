@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root{
     font-size: small;
-    font-family: "Special Gothic Expanded One", sans-serif;
     transition: all 0.3s ease-in-out;
 }
 
 .navbar{
+    font-family: "Nunito", sans-serif;
     font-weight: bold;
     text-align: center;
     color: var(--text-500);
@@ -44,6 +44,14 @@
     font-weight: bold;
     text-align: center;
     display: block;
+    transition: all 0.1s ease-in-out;
+}
+
+.nav-list a:hover{
+    background-color: var(--accent-100);
+    scale: 1.025;
+    color: var(--text-70);
+    border-radius: 0.5rem;
 }
 
 /* logo */
