@@ -81,3 +81,60 @@ hamburgerUnderlay.addEventListener('click', () => {
         navMenu.style.display = 'none';
         hamburgerUnderlay.style.display = 'none';
 });
+
+
+// footer base
+let footer = document.createElement("div");
+    footer.classList.add("footer-content");
+
+// social media
+let socialMediaContainer = document.createElement("div");
+    socialMediaContainer.classList.add("footer-social-media");
+
+let socialMediaTitle = document.createElement("h3");
+    socialMediaTitle.innerText = "Social Media";
+    socialMediaContainer.appendChild(socialMediaTitle);
+    
+    let socialItems = [
+        { name: "SEE Instagram", link: "404" },
+        { name: "SEE Youtube", link: "404" },
+        { name: "UMN Instagram", link: "404" },
+        { name: "UMN Website", link: "404" },
+        { name: "UMN Youtube", link: "404" }
+    ];
+    
+    socialItems.forEach(item => {
+        let listLink = document.createElement("a");
+        listLink.innerText = item.name;
+        listLink.href = item.link;
+        
+        socialMediaContainer.appendChild(listLink);
+    }
+);
+
+// Support Us
+let supportUs = document.createElement("div");
+    supportUs.classList.add("support-us");
+
+let supportUsTitle = document.createElement("h3");
+    supportUsTitle.innerText = "Support Us";
+
+let merchandiseLink = document.createElement("a");
+    merchandiseLink.innerText = "Merchandise";
+    merchandiseLink.href = "./Merchandise";
+
+// copyright
+let copyright = document.createElement("p");
+    copyright.innerText = "© 2025 UMN Self Expression Exhibiton. All Rights Reserved.";
+
+// Append footers elements
+footer.appendChild(socialMediaContainer);
+footer.appendChild(supportUs);
+footer.appendChild(merchandiseLink);
+footer.appendChild(copyright);
+
+
+supportUs.appendChild(supportUsTitle);
+supportUs.appendChild(merchandiseLink);
+
+document.getElementsByTagName("footer")[0].appendChild(footer);
