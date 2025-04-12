@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SEE 2025 - Class A</title>
 
-    <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet" href="CSS/colorTheme.css">
+
     <link rel="stylesheet" href="CSS/galery.css">
     <link rel="stylesheet" href="photoswipe/dist/photoswipe.css">
+    <link rel="stylesheet" href="PhotoSwipe/dist/photoswipe-dynamic-caption-plugin.css">
 </head>
 <body>
     <header>
@@ -16,50 +16,42 @@
     </header>
 
     <main>
-        <div class="gallery pswp-gallery pswp-gallery--single-column" id="gallery">
-            <a href="https://picsum.photos/2000"
-                data-pswp-width="2000"
-                data-pswp-height="2000"
-                target="_blank">
-                <img src="https://picsum.photos/2000" alt="">
-            </a>
-            <a href="https://picsum.photos/1080/1080"
-                data-pswp-width="1080"
-                data-pswp-height="1080"
-                target="_blank">
-                <img src="https://picsum.photos/1080/1080" alt="">
-            </a>
-            <a href="https://picsum.photos/1920/1080"
-                data-pswp-width="1920"
-                data-pswp-height="1080"
-                target="_blank">
-                <img src="https://picsum.photos/1920/1080" alt="">
-            </a>
-            <a href="https://picsum.photos/2000/1080"
-                data-pswp-width="2000"
-                data-pswp-height="1080"
-                target="_blank">
-                <img src="https://picsum.photos/2000/1080" alt="">
-            </a>
-        </div>
+        <div class="gallery pswp-gallery" id="gallery"></div>
     </main>
 </body>
 
-<script src="JS/Navbar.js"></script>
-<script type="module">
-import PhotoSwipeLightbox from '/photoswipe/dist/photoswipe-lightbox.esm.js';
+    <script src="JS/essentials.js"></script>
+    <script src="JS/Navbar.js"></script>
+    <script src="JS/galery.js"></script>
+    
+    <script type="module">
+        import PhotoSwipeLightbox from '/photoswipe/dist/photoswipe-lightbox.esm.js';
+        import PhotoSwipeDynamicCaption from '/PhotoSwipe/dist/photoswipe-dynamic-caption-plugin.esm.js';
 
-const lightbox = new PhotoSwipeLightbox({
-  // may select multiple "galleries"
-  gallery: '#gallery',
+        const lightbox = new PhotoSwipeLightbox({
+        // may select multiple "galleries"
+        gallerySelector: '#gallery',
 
-  // Elements within gallery (slides)
-  children: 'a',
+        // Elements within gallery (slides)
+        childSelector: 'div.pswp-gallery-item',
 
-  // setup PhotoSwipe Core dynamic import
-  pswpModule: () => import('/photoswipe/dist/photoswipe.esm.js')
-});
-lightbox.init();
-</script>
+        // setup PhotoSwipe Core dynamic import
+        pswpModule: () => import('/photoswipe/dist/photoswipe.esm.js'),
+
+        paddingFn: (viewportSize) => {
+            return {
+            top: 10, bottom: 10, left: 80, right: 80
+            }
+        }
+        });
+
+        const captionPlugin = new PhotoSwipeDynamicCaption(lightbox, {
+        // Plugins options, for example:
+        type: 'auto',
+        });
+        
+        // make sure you init photoswipe core after plugins are added
+        lightbox.init();
+    </script>
 
 </html>
