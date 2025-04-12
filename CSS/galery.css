@@ -20,6 +20,7 @@ main {
     overflow: hidden;
     object-fit: cover;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 a img {
@@ -29,3 +30,13 @@ a img {
     transition: transform 0.3s ease;
 }
 
+@media screen and (min-width: 520px) {
+    .gallery-item:hover {
+        aspect-ratio: 1/1;
+        scale: 1.05;
+    }
+    .gallery{
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
