@@ -46,6 +46,7 @@
     display: block;
 }
 
+/* logo */
 .logo{
     height: 4rem;
     object-fit: contain;
@@ -54,8 +55,9 @@
 }
 .logo img{
     height: 100%;
-    width: 100&;
+    width: 100%;
     object-fit: contain;
+    
 }
 
 /* The hamburger menu */
