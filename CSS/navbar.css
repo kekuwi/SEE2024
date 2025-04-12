@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
 
 :root{
+    font-size: small;
     font-family: "Special Gothic Expanded One", sans-serif;
     transition: all 0.3s ease-in-out;
 }
 
 .navbar{
-    font-size: 20px;
     font-weight: bold;
     text-align: center;
     color: var(--text-500);
@@ -48,7 +48,7 @@
 
 /* logo */
 .logo{
-    height: 4rem;
+    height: 4em;
     object-fit: contain;
     padding: 0.3rem 0 ;
     cursor: pointer;
@@ -81,12 +81,20 @@
     z-index: 1;
 }
 
-
+@media screen and (min-width: 412px) {
+    :root{
+        font-size: medium;
+    }
+}
 @media screen and (min-width: 768px) {
+    :root{
+        font-size: large;
+    }
+
     .hamburger-menu{
         display: none;
         cursor: pointer;
-        font-size: 30px;
+        font-size: large;
         color: var(--text-50);
     }
 

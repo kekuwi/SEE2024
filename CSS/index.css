@@ -1,25 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 html{
     height: auto;
     min-height: 100vh;
     scroll-behavior: smooth;
 }
 body{
-    font-family: "Special Gothic Expanded One", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
     background-color: var(--background-100);
 }
+h1, h2{
+    font-family: "Special Gothic Expanded One", sans-serif;
+}
+
 /* Hero or Main */
 main{
     display: flex;
     flex-direction: column;
+    text-align: center;
     align-items: center;
     justify-content: center;
-    text-align: center;
     background-color: var(--background-50);
 }
 main .hero{
     width: 80vw;
-    height: 70vh;
+    height: 35rem;
+    margin: 4rem 0 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,6 +41,7 @@ main .hero{
 }
 
 .button{
+    font-family: "Special Gothic Expanded One", sans-serif;
     background-color: var(--primary-500);
     color: var(--text-50);
     border: none;
@@ -96,17 +104,21 @@ main .hero{
     margin: 0;
     object-fit: cover;
 }
+
+@media screen and (min-width: 412px) {
+    :root{
+        font-size: medium;
+    }
+}
+
 @media (min-width: 512px) {
 
-    main .hero{
-        height: 50vh;
-        transform: translate(0, 3rem);
-    }
     .about{
         height: 25rem;
     }
     .categories{
-        height: 40rem;}
+        height: 40rem;
+    }
     .category-list{
         grid-template-columns: calc(100vw/4 - 1rem) calc(100vw/4 - 1rem) calc(100vw/4 - 1rem) calc(100vw/4 - 1rem);
         grid-template-rows: calc(100vw/4 + 1rem) calc(100vw/4 + 1rem);
@@ -116,7 +128,8 @@ main .hero{
         height: calc(100vw/4 - 1.5rem);
     }
 }
-@media (min-width: 896px) {
+
+@media (min-width: 768px) {
     .categories{
         height: 30rem;}
     .category-list{
