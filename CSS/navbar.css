@@ -46,6 +46,18 @@
     display: block;
 }
 
+.logo{
+    height: 4rem;
+    object-fit: contain;
+    padding: 0.3rem 0 ;
+    cursor: pointer;
+}
+.logo img{
+    height: 100%;
+    width: 100&;
+    object-fit: contain;
+}
+
 /* The hamburger menu */
 .hamburger-button{
     display: block;

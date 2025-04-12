@@ -13,7 +13,7 @@ let logoContainer = document.createElement("a");
     logoContainer.href = "./";
 
 let logo = document.createElement("img");
-    logo.src = "Assets/logo.png";
+    logo.src = "Assets/SEE logo.png";
     logo.alt = "SEE 2025 Logo";
 
 // Burger menu
