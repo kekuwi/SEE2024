@@ -5,12 +5,12 @@ html, body {
     padding: 0;
 }
 main {
-    margin: 64px auto;
+    margin: 4rem auto;
 }
 .gallery{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(128px, 1fr));
     gap: 6px;
 }
 
