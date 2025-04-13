@@ -91,12 +91,23 @@
 
 /* footer */
 .footer-content{
+    font-family: "Nunito", sans-serif;
+
     width: 100vw;
     min-height: 10rem;
     padding: 3rem;
     display: flex;
     flex-direction: column;
     background-color: var(--background-400);
+}
+.footer-content a{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.footer-content h3{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: var(--text-800);
 }
 
 .footer-social-media{
