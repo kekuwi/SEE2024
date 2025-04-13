@@ -34,3 +34,13 @@ let manifest = document.createElement("link");
     manifest.rel = "manifest";
     manifest.href = "Assets/favicon/site.webmanifest";
     document.head.appendChild(manifest);
+
+// analytics 
+let analytics = document.createElement("script");
+    analytics.src = "https://www.googletagmanager.com/gtag/js?id=G-7X9JY0W5C1";
+    analytics.async = true;
+    document.head.appendChild(analytics);
+
+let gtag = document.createElement("script");
+    gtag.innerHTML = `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-7X9JY0W5C1');`;
+    document.head.appendChild(gtag);
