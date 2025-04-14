@@ -17,6 +17,8 @@ h1, h2{
 
 /* Hero or Main */
 main{
+    min-width: 13rem;
+    padding: 4rem 0;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -25,17 +27,20 @@ main{
     background-color: var(--background-50);
 }
 main .hero{
-    width: 80vw;
-    height: 35rem;
-    margin: 4rem 0 0 0;
+    width: 90vw;
+    height: auto;
+    margin: 6rem 0 0 0;
+    padding: 2rem ;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    background-color: hsla(0, 0%, 100%, 0.725);
+    border-radius: 5rem 0 5rem 0;
 }
 .web-title h1{
-    font-size: 2.1rem;
+    font-size: 1.8rem;
     font-weight: bold;
     margin: 0.5rem;
     color: var(--secondary-500);
@@ -110,6 +115,10 @@ main .hero{
     :root{
         font-size: medium;
     }
+
+    .web-title h1{
+        font-size: 2.1rem;
+    }
 }
 
 @media (min-width: 512px) {
@@ -131,6 +140,17 @@ main .hero{
 }
 
 @media (min-width: 768px) {
+    :root{
+        font-size: large;
+    }
+    main .hero{
+        min-width: auto;
+        max-width: 60rem;
+    }
+    .web-title h1{
+        font-size: 3rem;
+    }
+    
     .categories{
         height: 30rem;}
     .category-list{
