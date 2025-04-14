@@ -75,7 +75,7 @@
     background-color: transparent;
     border: none;
     font-size: 30px;
-    color: var(--text-500);
+    color: var(--secondary-200);
 }
 .hamburger-underlay{
     display: none;
