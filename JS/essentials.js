@@ -2,12 +2,12 @@
 let resetCSS = document.createElement("link");
     resetCSS.rel = "stylesheet";
     resetCSS.href = "CSS/reset.css";
-    document.head.appendChild(resetCSS);
+    document.head.prepend(resetCSS);
 
 let colorThemeCSS = document.createElement("link");
     colorThemeCSS.rel = "stylesheet";
     colorThemeCSS.href = "CSS/colorTheme.css";
-    document.head.appendChild(colorThemeCSS);
+    document.head.prepend(colorThemeCSS);
 
 //favicon
 let appleTouchIcon = document.createElement("link");
