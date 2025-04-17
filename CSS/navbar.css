@@ -98,7 +98,7 @@
     padding: 3rem;
     display: flex;
     flex-direction: column;
-    background-color: var(--background-400);
+    background-color: #337f5d;
 }
 .footer-content a{
     font-size: 1rem;
