@@ -92,7 +92,7 @@
 /* footer */
 .footer-content{
     font-family: "Nunito", sans-serif;
-
+    color: #defbfc;
     width: 100vw;
     min-height: 10rem;
     padding: 3rem;
@@ -107,7 +107,7 @@
 .footer-content h3{
     font-size: 1.5rem;
     font-weight: bolder;
-    color: var(--text-800);
+    color: #b8ebff;
 }
 
 .footer-social-media{
