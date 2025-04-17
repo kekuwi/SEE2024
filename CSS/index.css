@@ -48,13 +48,13 @@ main .hero{
 
 .button{
     font-family: "Special Gothic Expanded One", sans-serif;
-    background-color: var(--primary-500);
+    background-color: #337f5d;
     color: var(--text-50);
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
     margin: 3rem 0;
-    border-radius: 0.5rem;
-    font-size: 1.2rem;
+    border-radius: 99999rem;
+    font-size: 1.5rem;
     cursor: pointer;
     transition: 0.3s ease;
 }
