@@ -1,0 +1,19 @@
+main{
+    color: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(https://lookimg.com/images/2025/04/16/Z9MZFV.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+main a{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 4rem;
+}
