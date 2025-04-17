@@ -9,7 +9,11 @@ html{
 body{
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
-    background-color: var(--background-100);
+    background: url(https://lookimg.com/images/2025/04/16/Z9MZFV.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 h1, h2{
     font-family: "Special Gothic Expanded One", sans-serif;
@@ -24,7 +28,6 @@ main{
     text-align: center;
     align-items: center;
     justify-content: center;
-    background-color: var(--background-50);
 }
 main .hero{
     width: 90vw;
