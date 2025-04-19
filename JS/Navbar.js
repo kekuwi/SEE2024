@@ -121,7 +121,7 @@ let supportUsTitle = document.createElement("h3");
 
 let merchandiseLink = document.createElement("a");
     merchandiseLink.innerText = "Merchandise";
-    merchandiseLink.href = "./Merchandise";
+    merchandiseLink.href = "https://forms.gle/JgWsZASdfBqEG7e56";
 
 // copyright
 let copyright = document.createElement("p");
