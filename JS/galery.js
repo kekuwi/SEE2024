@@ -23,6 +23,7 @@ data.forEach(item => {
     let imageThumbnail = document.createElement("img");
         imageThumbnail.src = item.s_link;
         imageThumbnail.alt = item.alt;
+        imageThumbnail.setAttribute("loading", "lazy");
 
     let imageDescription = document.createElement("div");
         imageDescription.classList.add("pswp-caption-content");
