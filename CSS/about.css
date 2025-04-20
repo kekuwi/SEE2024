@@ -22,14 +22,12 @@ main{
     justify-content: center;
     gap: 2rem;
 }
-section{
-}
 h1{
     font-family: "Special Gothic Expanded One", sans-serif;
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--secondary-500);
     text-align: center;
-    margin: 0.5rem 0;
+    margin: 1rem 0;
 }
 
 /* About Section */
