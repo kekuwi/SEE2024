@@ -94,11 +94,11 @@ let socialMediaTitle = document.createElement("h3");
     socialMediaContainer.appendChild(socialMediaTitle);
     
     let socialItems = [
-        { name: "SEE Instagram", link: "404" },
-        { name: "SEE Youtube", link: "404" },
-        { name: "UMN Instagram", link: "404" },
-        { name: "UMN Website", link: "404" },
-        { name: "UMN Youtube", link: "404" }
+        { name: "SEE Instagram", link: "https://www.instagram.com/selfexpressionexhibition/" },
+        { name: "SEE Tiktok", link: "https://www.tiktok.com/@see.umn" },
+        { name: "SEE Email", link: "mailto:see.umn.2021@gmail.com" },
+        { name: "UMN Website", link: "https://www.umn.ac.id/en/home/" },
+        { name: "UMN Instagram", link: "https://www.instagram.com/universitasmultimedianusantara/" }
     ];
     
     socialItems.forEach(item => {
