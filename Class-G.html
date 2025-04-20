@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEE 2024 - Class E</title>
+
+
+    <link rel="stylesheet" href="CSS/galery.css">
+    <link rel="stylesheet" href="PhotoSwipe/dist/photoswipe.css">
+    <link rel="stylesheet" href="PhotoSwipe/dist/photoswipe-dynamic-caption-plugin.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GR7NVFYEH6"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-GR7NVFYEH6');
+    </script>
+</head>
+<body>
+    <header></header>
+
+    <main>
+        <div class="gallery pswp-gallery" id="gallery"></div>
+    </main>
+    <footer></footer>
+</body>
+
+    <script src="JS/Navbar.js"></script>   
+    <script src="JS/essentials.js"></script>
+    <script src="JS/galery.js"></script>
+    
+    <script type="module" dist="true">
+        import PhotoSwipeLightbox from './PhotoSwipe/dist/photoswipe-lightbox.esm.js';
+        import PhotoSwipeDynamicCaption from './PhotoSwipe/dist/photoswipe-dynamic-caption-plugin.esm.js';
+
+        const lightbox = new PhotoSwipeLightbox({
+        // may select multiple "galleries"
+        gallerySelector: '#gallery',
+
+        // Elements within gallery (slides)
+        childSelector: 'div.pswp-gallery-item',
+
+        // setup PhotoSwipe Core dynamic import
+        pswpModule: () => import('./PhotoSwipe/dist/photoswipe.esm.js'),
+
+        paddingFn: (viewportSize) => {
+            return {
+            top: 0, bottom: 0, left: 10, right: 10
+            }
+        }
+        });
+
+        const captionPlugin = new PhotoSwipeDynamicCaption(lightbox, {
+        // Plugins options, for example:
+        type: 'auto',
+        });
+        
+        // make sure you init photoswipe core after plugins are added
+        lightbox.init();
+    </script>
+
+</html>
