@@ -135,6 +135,26 @@ main .hero{
     object-fit: cover;
 }
 
+/* Merch Section */
+.merchandise{
+    color: rgb(232, 244, 255);
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(#5bbbb0f0,#54c271);
+}
+.merchandise div{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 @media screen and (min-width: 412px) {
     :root{
         font-size: medium;
