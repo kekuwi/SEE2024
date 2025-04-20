@@ -83,7 +83,10 @@ hamburgerUnderlay.addEventListener('click', () => {
 
 // footer base
 let footer = document.createElement("div");
-    footer.classList.add("footer-content");
+    footer.classList.add("footer");
+
+let footerContainer = document.createElement("div");
+    footerContainer.classList.add("footer-content");
 
 // social media
 let socialMediaContainer = document.createElement("div");
@@ -126,11 +129,12 @@ let copyright = document.createElement("p");
     copyright.innerText = "© 2025 UMN Self Expression Exhibiton. All Rights Reserved.";
 
 // Append footers elements
-footer.appendChild(socialMediaContainer);
-footer.appendChild(supportUs);
-footer.appendChild(merchandiseLink);
+footer.appendChild(footerContainer);
 footer.appendChild(copyright);
 
+footerContainer.appendChild(socialMediaContainer);
+footerContainer.appendChild(supportUs);
+footerContainer.appendChild(merchandiseLink);
 
 supportUs.appendChild(supportUsTitle);
 supportUs.appendChild(merchandiseLink);
