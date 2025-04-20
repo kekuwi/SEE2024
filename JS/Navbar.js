@@ -30,7 +30,7 @@ let navList = document.createElement("ul");
 
 let navListItems = [
     { name: "Home", link: "./" },
-    { name: "About", link: "./About" },
+    { name: "About", link: "./about" },
     { name: "Merchandise", link: "https://forms.gle/JgWsZASdfBqEG7e56" }
 ];
 
