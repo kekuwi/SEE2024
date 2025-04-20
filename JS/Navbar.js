@@ -72,14 +72,14 @@ hamburger.addEventListener('click', () => {
         hamburgerUnderlay.style.display = 'block';
     } else {
         menuOpen = false;
-        navMenu.style.display = 'none';
-        hamburgerUnderlay.style.display = 'none';
+        navMenu.style.display = '';
+        hamburgerUnderlay.style.display = '';
     }
 });
 hamburgerUnderlay.addEventListener('click', () => {
         menuOpen = false;
-        navMenu.style.display = 'none';
-        hamburgerUnderlay.style.display = 'none';
+        navMenu.style.display = '';
+        hamburgerUnderlay.style.display = '';
 });
 
 
