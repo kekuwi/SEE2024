@@ -44,7 +44,6 @@
     font-weight: bold;
     text-align: center;
     display: block;
-    transition: all 0.1s ease-in-out;
 }
 
 .nav-list a:hover{
