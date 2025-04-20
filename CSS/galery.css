@@ -14,12 +14,12 @@ body{
 }
 main {
     margin: 4rem 0 0 0;
+    padding: 6px 0;
     min-height: calc(100vh - 10rem);
     background-color: rgba(0, 0, 0, 0.25);
 }
 .gallery{
     display: grid;
-    transform: translateY(6px);
     grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
     grid-template-rows: repeat(auto-fill, minmax(128px, 1fr));
     gap: 6px;
@@ -43,7 +43,7 @@ a img {
 @media screen and (min-width: 520px) {
     .gallery-item:hover {
         aspect-ratio: 1/1;
-        scale: 1.05;
+        scale: 1.025;
     }
     .gallery{
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
